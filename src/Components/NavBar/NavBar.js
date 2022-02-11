@@ -1,4 +1,6 @@
 import { useSelector } from "react-redux";
+import { MdMovie } from "react-icons/md";
+
 import "./NavBar.css";
 
 export default function NavBar() {
@@ -6,7 +8,7 @@ export default function NavBar() {
 
   return (
     <nav>
-      <label>Guest</label>
+      <MdMovie id="logo" size={56} />
       <h2>Movies List</h2>
       <label>No of movies: {movies.length}</label>
     </nav>

@@ -1,8 +1,48 @@
+.home {
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.inputDiv {
+  width: 40%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 .movieList {
-    display: flex;
-    justify-content: center;
+  width: 60%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: auto;
+}
+
+.movieList > h2 {
+  color: whitesmoke;
+}
+
+table {
+  width: 70%;
+  margin: auto;
+  color: white;
+  border-collapse: collapse;
+}
+
+th {
+  border: 1px solid rgb(27, 116, 218);
+  padding: 10px;
+  text-align: start;
+}
+
+td {
+  border: 1px solid rgb(27, 116, 218);
+  padding: 10px;
+  text-align: start;
 }
 
 tr {
-    text-align: center;
+  text-align: center;
 }
