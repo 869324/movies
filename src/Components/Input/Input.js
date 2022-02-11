@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import swal from "sweetalert";
 
+import "./Input.css";
 import { addMovie } from "../../Redux/Actions";
 
 function Input(props) {
@@ -39,27 +40,32 @@ function Input(props) {
 
   return (
     <div>
+      <h2>Add Movie</h2>
       <form onSubmit={add}>
-        <div>
-          <label>Name</label>
+        <div className="inputs">
+          <label className="inputLabel">Name</label>
           <input
-            class="input"
+            className="input"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
+            placeholder="Enter Name"
           />
         </div>
-        <div>
-          <label>Desc</label>
+        <div className="inputs">
+          <label className="inputLabel">Description</label>
           <input
-            class="input"
+            className="input"
             value={desc}
             onChange={(e) => setDesc(e.target.value)}
             required
+            placeholder="Enter Description"
           />
         </div>
 
-        <button class="add">Add</button>
+        <div className="inputs">
+          <button id="add">Add</button>
+        </div>
       </form>
     </div>
   );

@@ -1,0 +1,46 @@
+form {
+  width: 90%;
+  margin: auto;
+}
+
+.inputs {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 90%;
+  margin: auto;
+  padding: 7px;
+  border-radius: 7px;
+  font-size: 18px;
+  border-style: none;
+}
+
+.inputLabel {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 4%;
+  color: whitesmoke;
+}
+
+#add {
+  width: 92%;
+  margin: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  border-style: none;
+  border-radius: 7px;
+  background-color: rgb(27, 116, 218);
+}
+
+h2 {
+  color: whitesmoke;
+}

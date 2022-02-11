@@ -1,5 +1,8 @@
 nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  height: 9vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(10, 10, 10, 0.9);
+  color: white;
 }

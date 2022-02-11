@@ -40,24 +40,30 @@ function MovieList(props) {
   }
 
   return (
-    <div class="home">
-      <div class="inputDiv">
+    <div
+      className="home"
+      style={{ backgroundImage: "url(images/background.jpg)" }}
+    >
+      <div className="inputDiv">
         <Input />
       </div>
 
-      <div class="movieList">
+      <div className="movieList">
         {editor && <Editor movie={movie} setEditor={setEditor} />}
+        <h2>Movies</h2>
         <table>
           <tr>
+            <th>No.</th>
             <th>Name</th>
             <th>Description</th>
             <th>Edit</th>
             <th>Delete</th>
           </tr>
-          {movies.map((movie) => {
+          {movies.map((movie, id) => {
             return (
               <Movie
                 movie={movie}
+                id={id + 1}
                 handleDelete={handleDelete}
                 showEditor={showEditor}
               />
